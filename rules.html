@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-WINGS - Правила користування</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .text-accent { color: #38c83a; }
+        .bg-accent { background-color: #38c83a; }
+
+        /* Навігація */
+        .navbar {
+            background-color: #1a1a1a !important;
+            border-bottom: 1px solid #38c83a;
+        }
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+        }
+        .nav-link:hover { color: #38c83a !important; }
+
+        /* Картки правил */
+        .rule-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 30px;
+            transition: 0.3s;
+            height: 100%;
+        }
+        .rule-card:hover {
+            border-color: #38c83a;
+            transform: translateY(-5px);
+        }
+        .icon-box {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #38c83a;
+        }
+
+        /* Зони на карті (стилізація списку) */
+        .zone-list {
+            list-style: none;
+            padding: 0;
+        }
+        .zone-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .zone-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        footer { background-color: #1a1a1a; border-top: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="work.html">R-<span class="text-accent">WINGS</span></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="ewings.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link active text-accent" href="rules.html">Правила</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work.html">Кар'єра</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">ПРАВИЛА ТА БЕЗПЕКА</h1>
+            <p class="lead opacity-75">Все, що потрібно знати для комфортної поїздки</p>
+        </div>
+    </header>
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="rule-card text-center">
+                        <div class="icon-box"><i class="fas fa-user-check"></i></div>
+                        <h4 class="fw-bold">18+ років</h4>
+                        <p class="opacity-75">Користуватися сервісом дозволено особам, які досягли повноліття.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rule-card text-center">
+                        <div class="icon-box"><i class="fas fa-users-slash"></i></div>
+                        <h4 class="fw-bold">Один самокат — один райдер</h4>
+                        <p class="opacity-75">Категорично заборонено їздити вдвох або втрьох на одному пристрої.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rule-card text-center">
+                        <div class="icon-box"><i class="fas fa-wine-glass-slash"></i></div>
+                        <h4 class="fw-bold">Тверезий рух</h4>
+                        <p class="opacity-75">Заборонено керувати самокатом у стані алкогольного чи наркотичного сп'яніння.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <div class="rule-card">
+                        <h4 class="fw-bold mb-4"><i class="fas fa-map-marked-alt text-accent me-2"></i> Зони використання</h4>
+                        <ul class="zone-list">
+                            <li><span class="zone-dot bg-accent"></span> Зелена зона — дозволено їздити та паркуватися.</li>
+                            <li><span class="zone-dot bg-warning"></span> Жовта зона — зона зниженої швидкості (до 15 км/год).</li>
+                            <li><span class="zone-dot bg-danger"></span> Червона зона — їзда заборонена, самокат заблокується.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rule-card">
+                        <h4 class="fw-bold mb-4"><i class="fas fa-parking text-accent me-2"></i> Правильне паркування</h4>
+                        <p class="opacity-75">Паркуйте самокат так, щоб він не заважав пішоходам та проїзду авто. Використовуйте підніжку для стійкості.</p>
+                        <p class="small text-accent fw-bold">Завжди робіть фото підтвердження в додатку після завершення поїздки!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 mt-auto">
+        <div class="container text-center">
+            <p class="small mb-0 opacity-50">© 2026 E-wings Clone Project. Безпека — понад усе.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
